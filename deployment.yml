@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kuber-static-website
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kuber-static-website
+  template:
+    metadata:
+      labels:
+        app: kuber-static-website
+    spec:
+      containers:
+        - name: kuber-static-website
+          image: your-dockerhub-dhyaneshwari/kuber-static-website:latest
+          ports:
+            - containerPort: 80
