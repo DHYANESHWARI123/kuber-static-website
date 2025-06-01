@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: kuber-static-website
-          image: your-dockerhub-dhyaneshwari/kuber-static-website:latest
+          image: dhyaneshwari/kuber-static-website:latest
           ports:
             - containerPort: 80
