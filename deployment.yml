@@ -15,5 +15,6 @@ spec:
       containers:
         - name: kuber-static-website
           image: dhyaneshwari/kuber-static-website:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
